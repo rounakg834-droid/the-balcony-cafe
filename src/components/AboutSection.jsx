@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Sparkles, Heart, Coffee, Sun, Wind, ArrowRight, Compass } from 'lucide-react';
 import CoffeeBean3D from './CoffeeBean3D';
 import { CAFE_DATA } from '../constants/cafeData';
+import { getAssetUrl } from '../constants/images';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -120,7 +121,7 @@ export default function AboutSection() {
               <div className="relative aspect-[4/3] sm:aspect-[16/12] rounded-2xl overflow-hidden bg-beige/30">
                 <img
                   ref={mainImageRef}
-                  src="/assets/images/unnamed (2).webp"
+                  src={getAssetUrl('assets/images/unnamed (2).webp')}
                   alt="The Balcony Cafe warm wooden cabin dining room in Jalandhar"
                   className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-108 will-change-transform"
                   loading="lazy"

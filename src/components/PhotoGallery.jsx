@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Sparkles, Maximize2, X, ChevronLeft, ChevronRight, Camera, Eye } from 'lucide-react';
+import { getAssetUrl } from '../constants/images';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const GALLERY_ITEMS = [
   {
     id: 'g1',
-    src: '/assets/images/unnamed (4).webp',
+    src: getAssetUrl('assets/images/unnamed (4).webp'),
     title: 'The Two-Storey Balcony & Courtyard',
     category: 'Balcony & Outdoors',
     description: 'Sunlit daytime view of the 2-storey wooden facade, outdoor deck, and garden dining tables.',
@@ -17,7 +18,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g2',
-    src: '/assets/images/unnamed (7).webp',
+    src: getAssetUrl('assets/images/unnamed (7).webp'),
     title: 'Stone-Baked Farmhouse Pizza',
     category: 'Culinary & Bakes',
     description: 'Thin crust loaded with peppers, mushrooms, and olives, paired with crispy fries.',
@@ -26,7 +27,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g3',
-    src: '/assets/images/unnamed (10).webp',
+    src: getAssetUrl('assets/images/unnamed (10).webp'),
     title: 'The Handcrafted Coffee Bar',
     category: 'Ambiance & Spaces',
     description: 'Warm timber counter, espresso grinder, cloche cakes, and glowing backlit shelving.',
@@ -35,7 +36,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g4',
-    src: '/assets/images/unnamed.webp',
+    src: getAssetUrl('assets/images/unnamed.webp'),
     title: 'Mediterranean Mezze Platter',
     category: 'Culinary & Bakes',
     description: 'Velvety hummus, golden falafel, warm pita breads, sliced avocado, and feta.',
@@ -44,7 +45,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g5',
-    src: '/assets/images/unnamed (11).webp',
+    src: getAssetUrl('assets/images/unnamed (11).webp'),
     title: 'The Balcony Cafe at Night',
     category: 'Balcony & Outdoors',
     description: 'Illuminated evening facade under palm trees, showing the glowing rooftop and deck signs.',
@@ -53,7 +54,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g6',
-    src: '/assets/images/unnamed (2).webp',
+    src: getAssetUrl('assets/images/unnamed (2).webp'),
     title: 'Wooden Cabin Dining Lounge',
     category: 'Ambiance & Spaces',
     description: 'Spacious timber cabin dining with private booths, wood beam ceiling, and coffee bar.',
@@ -62,7 +63,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g7',
-    src: '/assets/images/unnamed (12).webp',
+    src: getAssetUrl('assets/images/unnamed (12).webp'),
     title: 'Sunlit Garden & Birdcage Floral Patio',
     category: 'Balcony & Outdoors',
     description: 'Garden dining with sunshine, pastel yellow tablecloths, and suspended floral installations.',
@@ -71,7 +72,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g8',
-    src: '/assets/images/unnamed (3).webp',
+    src: getAssetUrl('assets/images/unnamed (3).webp'),
     title: 'Herb-Crusted Cutlet & Aglio Olio',
     category: 'Culinary & Bakes',
     description: 'Pan-seared seasoned cutlet with garlic-infused spaghetti and velvety dipping cream.',
@@ -80,7 +81,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g9',
-    src: '/assets/images/unnamed (1).webp',
+    src: getAssetUrl('assets/images/unnamed (1).webp'),
     title: 'Evening Lamp Table & Fairy Lights',
     category: 'Balcony & Outdoors',
     description: 'Cozy garden nook with glowing lamp, wooden fence, fairy lights, and street views.',
@@ -89,7 +90,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g10',
-    src: '/assets/images/unnamed (8).webp',
+    src: getAssetUrl('assets/images/unnamed (8).webp'),
     title: 'Timber Mezzanine Alcove',
     category: 'Ambiance & Spaces',
     description: 'Intimate dining corner with checkered bar stools, bookshelf, and warm ceiling fixtures.',
@@ -98,7 +99,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g11',
-    src: '/assets/images/unnamed (9).webp',
+    src: getAssetUrl('assets/images/unnamed (9).webp'),
     title: 'Entrance Gate & Cafe Signboard',
     category: 'Balcony & Outdoors',
     description: 'Welcoming front gateway framed by palms with the official Balcony Cafe & Grill emblem.',
@@ -107,7 +108,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g12',
-    src: '/assets/images/unnamed (6).webp',
+    src: getAssetUrl('assets/images/unnamed (6).webp'),
     title: 'Private Table Place Settings',
     category: 'Ambiance & Spaces',
     description: 'Artfully laid dining tables with fine cutlery, floral wall accents, and warm timber panels.',
@@ -116,7 +117,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'g13',
-    src: '/assets/images/unnamed (5).webp',
+    src: getAssetUrl('assets/images/unnamed (5).webp'),
     title: 'Sun-Drenched Window Booths',
     category: 'Ambiance & Spaces',
     description: 'Comfortable booth seating facing the balcony door with afternoon light flooding the room.',

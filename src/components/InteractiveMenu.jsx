@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Coffee, Pizza, Utensils, Cake, Sparkles, Flame, Check, ArrowRight } from 'lucide-react';
 import CoffeeBean3D from './CoffeeBean3D';
+import { getAssetUrl } from '../constants/images';
 
 const CATEGORIES = [
   { id: 'coffee', label: 'Coffee & Beverages', icon: Coffee },
@@ -19,7 +20,7 @@ const MENU_ITEMS = {
       subtitle: 'Single-Origin Arabica',
       description: 'Hand-poured slow extraction highlighting bright floral notes, clean citrus acidity, and a smooth caramel finish.',
       tag: 'Roaster’s Choice',
-      image: '/assets/images/unnamed (10).webp',
+      image: getAssetUrl('assets/images/unnamed (10).webp'),
       notes: 'Brewed to order &bull; Hot or Iced',
     },
     {
@@ -57,7 +58,7 @@ const MENU_ITEMS = {
       subtitle: 'Creamy Hummus & Golden Falafel',
       description: 'Silky whipped chickpea hummus, crispy herb falafel, warm stone-baked pita, sliced avocado, kalamata olives, and feta.',
       tag: 'Chef’s Signature',
-      image: '/assets/images/unnamed.webp',
+      image: getAssetUrl('assets/images/unnamed.webp'),
       notes: 'Perfect for Sharing &bull; Fresh Herbs',
     },
     {
@@ -86,7 +87,7 @@ const MENU_ITEMS = {
       subtitle: 'Charred Thin Crust & Mozzarella',
       description: 'Hand-stretched sourdough base topped with rich San Marzano tomato sauce, sautéed mushrooms, bell peppers, olives, and melted mozzarella.',
       tag: 'Stone Oven Baked',
-      image: '/assets/images/unnamed (7).webp',
+      image: getAssetUrl('assets/images/unnamed (7).webp'),
       notes: 'Made Fresh &bull; Thin & Crispy',
     },
     {
@@ -95,7 +96,7 @@ const MENU_ITEMS = {
       subtitle: 'Garlic, Chili Flakes & Herb Cutlet',
       description: 'Al dente spaghetti tossed with golden toasted garlic slivers, chili flakes, Italian flat-leaf parsley, and pure extra virgin olive oil.',
       tag: 'Italian Classic',
-      image: '/assets/images/unnamed (3).webp',
+      image: getAssetUrl('assets/images/unnamed (3).webp'),
       notes: 'Twirled Fresh &bull; Olive Oil Emulsion',
     },
     {
@@ -115,7 +116,7 @@ const MENU_ITEMS = {
       subtitle: 'Pan-Seared with Garlic Pasta',
       description: 'Succulent seasoned cutlet seared with herbs and butter, served over a bed of garlic spaghetti and house cream sauce.',
       tag: 'House Specialty',
-      image: '/assets/images/unnamed (3).webp',
+      image: getAssetUrl('assets/images/unnamed (3).webp'),
       notes: 'Complete Meal &bull; Chef Recommended',
     },
     {
@@ -135,7 +136,7 @@ const MENU_ITEMS = {
       subtitle: 'Fresh Daily from our Bakery Counter',
       description: 'Daily rotating selection of butter croissants, cinnamon buns, tea cakes, and seasonal cookies baked in-house.',
       tag: 'Fresh from Oven',
-      image: '/assets/images/unnamed (10).webp',
+      image: getAssetUrl('assets/images/unnamed (10).webp'),
       notes: 'Ask Barista for Today’s Showcase',
     },
     {

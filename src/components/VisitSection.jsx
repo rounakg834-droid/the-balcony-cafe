@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MapPin, Clock, Compass, Navigation, Share2, CheckCircle2, ArrowRight, Utensils } from 'lucide-react';
 import { CAFE_DATA } from '../constants/cafeData';
 import CoffeeBean3D from './CoffeeBean3D';
+import { getAssetUrl } from '../constants/images';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -255,7 +256,7 @@ export default function VisitSection() {
           <div className="lg:col-span-5 rounded-3xl overflow-hidden shadow-luxury border-[3px] border-white relative min-h-[420px] lg:min-h-full group bg-beige/30">
             <img
               ref={parallaxImageRef}
-              src="/assets/images/unnamed (11).webp"
+              src={getAssetUrl('assets/images/unnamed (11).webp')}
               alt="The Balcony Cafe night exterior and facade in Jalandhar"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-108 will-change-transform"
               loading="lazy"

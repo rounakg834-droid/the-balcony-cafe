@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Sparkles, Utensils, ArrowUpRight, Flame, Coffee, Compass } from 'lucide-react';
 import CoffeeBean3D from './CoffeeBean3D';
+import { getAssetUrl } from '../constants/images';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,7 +16,7 @@ const SCENES = [
     tag: 'Signature Plates',
     title: 'The Mediterranean Mezze Platter',
     description: 'Velvety house-blended chickpea hummus, warm stone-baked pita breads, golden herb falafel, sliced avocado, and sun-ripened tomatoes.',
-    image: '/assets/images/unnamed.webp',
+    image: getAssetUrl('assets/images/unnamed.webp'),
     accentNote: 'Fresh Daily &bull; Sharing Plate',
     bgColor: '#FAF7F0',
   },
@@ -27,7 +28,7 @@ const SCENES = [
     tag: 'Oven Classics',
     title: 'Farmhouse Hearth Pizza & Fries',
     description: 'Hand-stretched thin crust baked to bubbling perfection with bell peppers, mushrooms, kalamata olives, melted mozzarella, and crisp golden fries.',
-    image: '/assets/images/unnamed (7).webp',
+    image: getAssetUrl('assets/images/unnamed (7).webp'),
     accentNote: 'Stone Baked &bull; Crisp Crust',
     bgColor: '#F6EFE6',
   },
@@ -39,7 +40,7 @@ const SCENES = [
     tag: 'Culinary Mains',
     title: 'Herb-Crusted Cutlet & Aglio Olio',
     description: 'Pan-seared herb-dusted cutlet served alongside twirled garlic spaghetti aglio e olio, accompanied by velvety house dipping sauce.',
-    image: '/assets/images/unnamed (3).webp',
+    image: getAssetUrl('assets/images/unnamed (3).webp'),
     accentNote: 'Chef Selection &bull; Slow Braised',
     bgColor: '#F2ECE0',
   },
@@ -51,7 +52,7 @@ const SCENES = [
     tag: 'The Roastery',
     title: 'The Artisan Coffee House Bar',
     description: 'Our illuminated warm timber bar where baristas pull single-origin espressos, prepare silky pour-overs, and present freshly baked pastries.',
-    image: '/assets/images/unnamed (10).webp',
+    image: getAssetUrl('assets/images/unnamed (10).webp'),
     accentNote: '100% Arabica &bull; Handcrafted',
     bgColor: '#F8F3EA',
   },
